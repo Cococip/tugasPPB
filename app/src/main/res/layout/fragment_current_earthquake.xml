@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivMap"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:contentDescription="Map"
+        android:src="@mipmap/ic_launcher_foreground"
+        tools:layout_editor_absoluteX="6dp" >
+
+    </ImageView>
+
+
+    <ImageView
+        android:id="@+id/ivMagnitude"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="@string/magnitude"
+        android:src="@mipmap/ic_launcher_foreground"
+        tools:layout_editor_absoluteY="395dp">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tvMagnitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_big"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="400dp"
+        tools:text="magnitude">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/ivClock"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:contentDescription="@string/datetime"
+        android:src="@drawable/ic_clock"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="425dp">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tvJamTanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="426dp"
+        tools:text="Jam">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/ivLocation"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:contentDescription="@string/location"
+        android:src="@drawable/ic_marker"
+        tools:ignore="RtlSymmetry"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="445dp">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tvWilayah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/padding_big"
+        tools:ignore="RtlSymmetry"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="445dp"
+        tools:text="wilayah">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvDirasakan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/padding_big"
+        tools:ignore="RtlSymmetry"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="465dp"
+        tools:text="dirasakan">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/ivDepth"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:contentDescription="@string/depth"
+        android:src="@drawable/ic_depth"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="484dp">
+    </ImageView>
+
+
+    <TextView
+        android:id="@+id/tvKedalaman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="485dp"
+        tools:text="kedalaman" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvLintangBujur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="504dp"
+        tools:text="lintang" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvPotensi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="182dp"
+        tools:layout_editor_absoluteY="523dp"
+        tools:text="potensi">
+    </TextView>
+
+    <Button
+        android:id="@+id/btnLihatLokasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/view_location"
+        android:textSize="@dimen/text_normal"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="613dp">
+
+    </Button>
+    </LinearLayout>
+
+</RelativeLayout>
